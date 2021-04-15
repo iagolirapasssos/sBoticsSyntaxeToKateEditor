@@ -3,7 +3,7 @@
 
 **PT_BR:**
 ```diff
-1. Instalar o editor KATE em https://kate-editor.org/pt-br/
+1. Instalar o editor KATE ou KWRITE em https://kate-editor.org/pt-br/
 2. Ter o python3 instalado
 3. Abrir o terminal ou prompt do Windows/Linux/MacOs
 4. Use o comando 'cd' para navegar até o diretório (pasta) onde está o arquivo install_snippets.py
@@ -15,7 +15,7 @@
 
 **EN_US:**
 ```diff
-1. Install the KATE editor at https://kate-editor.org/pt-br/
+1. Install the KATE or KWRITE editor at https://kate-editor.org/pt-br/
 2. Have python3 installed
 3. Open the Windows/Linux/MacOs terminal or prompt
 4. Use the 'cd' command to navigate to the directory (folder) where the install_snippets.py file is located
