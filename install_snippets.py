@@ -1,7 +1,7 @@
 import json
 import requests
 import os
-from class_languages import Linguagens
+from classes.languages import Linguagens
 
 ####USANDO AS APIS SBOTICS
 
@@ -42,6 +42,8 @@ api_link_csharp = [
 arquivoXML_csharp = ['csharp_ptbr.xml', 'csharp_en.xml']
 
 try:
+	print("\nAguarde/Wait...\n")
+
 	partes = Linguagens("reduc", "pt_BR")
 	for link in api_link_reduc:
 		indice = api_link_reduc.index(link)
@@ -67,5 +69,14 @@ try:
 			arquivo.write(total)
 		arquivo.close()
 		cpxml(filename)
+
+	print("\nSucesso!/Sucess!...\n")
+	try:
+		os.system('ls')
+	except:
+		try:
+			os.system('dir')
+		except:
+			print("\nError!...\n")
 except:
 	print("Alert! Error!")
