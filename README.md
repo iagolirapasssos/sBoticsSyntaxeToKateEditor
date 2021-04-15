@@ -12,10 +12,16 @@
 (Attention! If the above directories do not exist, then create them manually!)
 
 
-**PT_BR:** _Os arquivos .kateschema com os temas, podem ser importados no próprio KATE\
-Acesse o menu Configurações > Configurações do Kate > Fontes e cores.\
-Escolha R-EDUC em "Eschema", depois "importar"._
+**PT_BR:**
+```diff
+1. Os arquivos .kateschema com os temas, podem ser importados no próprio KATE
+2. Acesse o menu Configurações > Configurações do Kate > Fontes e cores.
+3. Escolha R-EDUC em "Eschema", depois "importar".
+```
 
-**EN_US:** _The .kateschema files with the themes can be imported into KATE itself\
-Access the Settings menu> Kate Settings> Fonts and colors.\
-Choose R-EDUC in "Eschema", then "import"._
+**EN_US:** 
+```diff
+1. The .kateschema files with the themes can be imported into KATE itself
+2. Access the Settings menu> Kate Settings> Fonts and colors.
+3. Choose R-EDUC in "Eschema", then "import".
+```
