@@ -1,7 +1,5 @@
 import json
 import requests
-import shutil
-import subprocess
 import os
 from class_languages import Linguagens
 
