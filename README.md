@@ -3,24 +3,26 @@
 
 **PT_BR:**
 ```diff
-1. Ter o python3 instalado
-2. Abrir o terminal ou prompt do Windows/Linux/MacOs
-3. Use o comando 'cd' para navegar até o diretório (pasta) onde está o arquivo install_snippets.py
-4. Você poderá vizualizar os arquivos com 'dir' (WINDOWS) ou 'ls' (LINUX OU MAC)
-5. Instalar as bibliotecas com: pip install -r requirements.txt
-6. No WINDOW: py install_snippets.py
-7. No Linux ou Mac: python3 install_snippets.py
+1. Instalar o editor KATE em https://kate-editor.org/pt-br/
+2. Ter o python3 instalado
+3. Abrir o terminal ou prompt do Windows/Linux/MacOs
+4. Use o comando 'cd' para navegar até o diretório (pasta) onde está o arquivo install_snippets.py
+5. Você poderá vizualizar os arquivos com 'dir' (WINDOWS) ou 'ls' (LINUX OU MAC)
+6. Instalar as bibliotecas com: pip install -r requirements.txt
+7. No WINDOW: py install_snippets.py
+8. No Linux ou Mac: python3 install_snippets.py
 ```
 
 **EN_US:**
 ```diff
-1. Have python3 installed
-2. Open the Windows/Linux/MacOs terminal or prompt
-3. Use the 'cd' command to navigate to the directory (folder) where the install_snippets.py file is located
-4. You can view the files with 'dir' (WINDOWS) or 'ls' (LINUX OR MAC)
-5. Install the libraries with on prompt or terminal: pip install -r requirements.txt
-6. Use on WINDOW: py install_snippets.py
-7. Use on Linux or Mac: python3 install_snippets.py
+1. Install the KATE editor at https://kate-editor.org/pt-br/
+2. Have python3 installed
+3. Open the Windows/Linux/MacOs terminal or prompt
+4. Use the 'cd' command to navigate to the directory (folder) where the install_snippets.py file is located
+5. You can view the files with 'dir' (WINDOWS) or 'ls' (LINUX OR MAC)
+6. Install the libraries with on prompt or terminal: pip install -r requirements.txt
+7. Use on WINDOW: py install_snippets.py
+8. Use on Linux or Mac: python3 install_snippets.py
 ```
 
 **USE AS SEGUINTES INSTRUÇÕES CASO O INSTALADOR NÃO EXECUTE CORRETAMENTE**\
