@@ -17,7 +17,7 @@ class Linguagens:
 ]>
 <language name=\"R-EDUC\" section="Sources"
 		version=\"11\" kateversion="5.0"
-		indenter=\"cstyle\"
+		indenter=\"normal\"
 		extensions=\"*.sBoticsR\"
 		mimetype=\"text/x-reduc\"
 		priority=\"5\">
@@ -32,6 +32,9 @@ class Linguagens:
 <highlighting>
 	<list name=\"controlflow\">
 	<item>interromper</item>
+  <item>
+  <borala name="borala" description="dfghjkjhgfghjk"/>
+  </item>
 	<item>outros</item>
 	<item>farei</item>
 	<item>enquanto</item>
@@ -59,19 +62,32 @@ class Linguagens:
 
 	def reduc_ptbr_parte3(self):
 		parte3 = """
-<list name="types">
+    <list name="types">
       <item>numero</item>
       <item>texto</item>
       <item>booleano</item>
+    </list>
+
+    <list name="others">
+      <item>
+      <title>exemplo1:\n</title>
+      <description>
+      inicio\n
+        #Inserir código aqui!
+      fim</description>
+      </item>
     </list>
     <contexts>
       <context attribute="Normal Text" lineEndContext="#stay" name="Normal">
         <DetectSpaces />
         <RegExpr attribute="Preprocessor" context="Outscoped" String="&pphash;if\s+0\s*$" beginRegion="PP" firstNonSpace="true" />
         <RegExpr context="AfterHash" String="&ispphash;" firstNonSpace="false" lookAhead="false" />
+        
         <keyword attribute="Control Flow" context="#stay" String="controlflow"/>
         <keyword attribute="Keyword" context="#stay" String="keywords"/>
         <keyword attribute="Data Type" context="#stay" String="types"/>
+        <keyword attribute="OTHERS" context="#stay" String="others"/>
+
         <DetectIdentifier />
         <DetectChar attribute="Symbol" context="#stay" char="{" beginRegion="Brace1" />
         <DetectChar attribute="Symbol" context="#stay" char="}" endRegion="Brace1" />
@@ -204,17 +220,18 @@ class Linguagens:
       </context>
     </contexts>
     <itemDatas>
+      <itemData name="Comment"      defStyleNum="dsComment" spellChecking="false"/>
 			<itemData name="Normal Text"  defStyleNum="dsNormal" spellChecking="false"/>
       <itemData name="Control Flow" defStyleNum="dsControlFlow" spellChecking="false"/>
       <itemData name="Keyword"      defStyleNum="dsKeyword" spellChecking="false"/>
       <itemData name="Data Type"    defStyleNum="dsDataType" spellChecking="false"/>
+      <itemData name="OTHERS"    defStyleNum="dsKeyword" spellChecking="false"/>
       <itemData name="Float"      defStyleNum="dsFloat" spellChecking="false"/>
       <itemData name="int"      defStyleNum="dsDecVal" spellChecking="false"/>
       <itemData name="Standard Suffix" defStyleNum="dsBuiltIn" spellChecking="false" />
       <itemData name="Char"         defStyleNum="dsChar" spellChecking="false"/>
-      <itemData name="String"       defStyleNum="dsString"/>
-      <itemData name="String Char"  defStyleNum="dsSpecialChar"/>
-      <itemData name="Comment"      defStyleNum="dsComment"/>
+      <itemData name="String"       defStyleNum="dsString" spellChecking="false"/>
+      <itemData name="String Char"  defStyleNum="dsSpecialChar" spellChecking="false"/>
       <itemData name="Symbol"       defStyleNum="dsOperator" spellChecking="false"/>
       <itemData name="Preprocessor" defStyleNum="dsPreprocessor" spellChecking="false"/>
       <itemData name="Prep. Lib"    defStyleNum="dsImport" spellChecking="false"/>
@@ -228,7 +245,7 @@ class Linguagens:
 		<keywords casesensitive="1" additionalDeliminator="#'"/>
   </general>
 </language>
-<!-- kate: replace-tabs on; tab-width 2; indent-width 2; -->		
+<!-- kate: replace-tabs on; tab-width 2; indent-width 2; -->
 		"""
 		return parte3
 
@@ -246,7 +263,7 @@ class Linguagens:
 ]>
 <language name=\"R-EDUC\" section="Sources"
 		version=\"11\" kateversion="5.0"
-		indenter=\"cstyle\"
+		indenter=\"normal\"
 		extensions=\"*.sBoticsR\"
 		mimetype=\"text/x-reduc\"
 		priority=\"5\">
@@ -287,19 +304,28 @@ class Linguagens:
 
 	def reduc_en_parte3(self):
 		parte3 = """
-<list name="types">
+    <list name="types">
       <item>numero</item>
       <item>texto</item>
       <item>booleano</item>
+    </list>
+    <list name="others">
+      <item>
+      <name>exemplo1</name>
+      <description>inicio\nfim</description>
+      </item>
     </list>
     <contexts>
       <context attribute="Normal Text" lineEndContext="#stay" name="Normal">
         <DetectSpaces />
         <RegExpr attribute="Preprocessor" context="Outscoped" String="&pphash;if\s+0\s*$" beginRegion="PP" firstNonSpace="true" />
         <RegExpr context="AfterHash" String="&ispphash;" firstNonSpace="false" lookAhead="false" />
+        
         <keyword attribute="Control Flow" context="#stay" String="controlflow"/>
         <keyword attribute="Keyword" context="#stay" String="keywords"/>
         <keyword attribute="Data Type" context="#stay" String="types"/>
+        <keyword attribute="OTHERS" context="#stay" String="others"/>
+
         <DetectIdentifier />
         <DetectChar attribute="Symbol" context="#stay" char="{" beginRegion="Brace1" />
         <DetectChar attribute="Symbol" context="#stay" char="}" endRegion="Brace1" />
@@ -432,17 +458,18 @@ class Linguagens:
       </context>
     </contexts>
     <itemDatas>
+      <itemData name="Comment"      defStyleNum="dsComment" spellChecking="false"/>
 			<itemData name="Normal Text"  defStyleNum="dsNormal" spellChecking="false"/>
       <itemData name="Control Flow" defStyleNum="dsControlFlow" spellChecking="false"/>
       <itemData name="Keyword"      defStyleNum="dsKeyword" spellChecking="false"/>
       <itemData name="Data Type"    defStyleNum="dsDataType" spellChecking="false"/>
+      <itemData name="OTHERS"    defStyleNum="dsKeyword" spellChecking="false"/>
       <itemData name="Float"      defStyleNum="dsFloat" spellChecking="false"/>
       <itemData name="int"      defStyleNum="dsDecVal" spellChecking="false"/>
       <itemData name="Standard Suffix" defStyleNum="dsBuiltIn" spellChecking="false" />
       <itemData name="Char"         defStyleNum="dsChar" spellChecking="false"/>
-      <itemData name="String"       defStyleNum="dsString"/>
-      <itemData name="String Char"  defStyleNum="dsSpecialChar"/>
-      <itemData name="Comment"      defStyleNum="dsComment"/>
+      <itemData name="String"       defStyleNum="dsString" spellChecking="false"/>
+      <itemData name="String Char"  defStyleNum="dsSpecialChar" spellChecking="false"/>
       <itemData name="Symbol"       defStyleNum="dsOperator" spellChecking="false"/>
       <itemData name="Preprocessor" defStyleNum="dsPreprocessor" spellChecking="false"/>
       <itemData name="Prep. Lib"    defStyleNum="dsImport" spellChecking="false"/>
