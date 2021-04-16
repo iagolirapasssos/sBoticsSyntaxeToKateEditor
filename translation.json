@@ -1,0 +1,31 @@
+{
+	"ptbr": {
+		"await": "Atualizando, aguarde alguns instantes...",
+		"offline": "Não foi possível se conectar aos servidores sBotics... Resgatando informações salvas no seu dispositivo...",
+		"system_detected":{
+			"linux": "Linux detectado.",
+			"darwin": "MacOSX detectado.",
+			"windows": "Windows detectado.",
+			"not_found": "Não foi possível detectar o sistema(usando windows como padrão) :(, entre em contato com o criador para mais informações"
+		},
+		"error": "Ocorreu um erro, peça ajuda no github ou servidor do sBotics caso necessário! mensagem de erro:",
+		"sucess": "Tudo instalado com sucesso!",
+		"syntax": "Syntax atualizada: ",
+		"theme": "Tema atualizado:"
+	},
+
+	"en": {
+		"await": "Updating, Wait a few moments...",
+		"offline": "Could not connect to sBotics servers ... Getting information saved on your device...",
+		"system_detected":{
+			"linux": "Linux detected.",
+			"darwin": "MacOSX detected.",
+			"windows": "Windows detected.",
+			"not_found": "could not detect the system(using windows with default) :(, contact the creator for more information"
+		},
+		"error": "An error occurred, ask for help on the github or sBotics server if necessary! error message:",
+		"sucess": "All successfully installed!",
+		"syntax": "Updated syntax:",
+		"theme": "Updated theme:"
+	}
+}
