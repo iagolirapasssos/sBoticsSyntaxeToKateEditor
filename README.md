@@ -9,7 +9,7 @@ _(DOWNLOADING KATE EDITOR)_
 
 **PT_BR:**
 ```diff
-1. Instalar o editor KATE ou KWRITE em https://kate-editor.org/pt-br/
+1. Instalar o editor KATE ou KWRITE
 2. Ter o python3 instalado
 3. Abrir o terminal ou prompt do Windows/Linux/MacOs
 4. Use o comando 'cd' para navegar até o diretório (pasta) onde está o arquivo update_files.py
@@ -21,7 +21,7 @@ _(DOWNLOADING KATE EDITOR)_
 
 **EN_US:**
 ```diff
-1. Install the KATE or KWRITE editor at https://kate-editor.org/pt-br/
+1. Install the KATE or KWRITE editor
 2. Have python3 installed
 3. Open the Windows/Linux/MacOs terminal or prompt
 4. Use the 'cd' command to navigate to the directory (folder) where the update_files.py file is located
