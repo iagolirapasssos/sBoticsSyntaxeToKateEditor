@@ -57,7 +57,7 @@
 2. Choose R-EDUC in "Eschema", then "import".
 ```
 
-**CONTRIBUA COM NOVOS TEMAS**/
+**CONTRIBUA COM NOVOS TEMAS**\
 _(CONTRIBUTE TO NEW THEMES)_
 
 [Clique aqui para contribuir!/Click here to contribute!](https://github.com/iagolirapasssos/sBoticsThemesToKateEditor.git)
