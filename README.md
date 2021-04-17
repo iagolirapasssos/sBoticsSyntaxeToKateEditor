@@ -2,6 +2,11 @@
 **INSTRUÇÃO PARA GERAR OS ARQUIVOS DE SINTAXE PARA O EDITOR KATE - SYNTAX HIGHLIGHTING**\
 (INSTRUCTION TO GENERATE SYNTAX FILES FOR EDITOR KATE - SYNTAX HIGHLIGHTING)
 
+**BAIXANDO O EDITOR KATE**\
+_(DOWNLOADING KATE EDITOR)_
+
+[Clique aqui para baixar o KATE ou KRITE/Click here to download KATE or KRITE](https://kate-editor.org/pt-br/)
+
 **PT_BR:**
 ```diff
 1. Instalar o editor KATE ou KWRITE em https://kate-editor.org/pt-br/
