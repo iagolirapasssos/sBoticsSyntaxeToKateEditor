@@ -19,12 +19,12 @@ try:
 	USERPROFILE = os.path.expanduser('~')
 	HOME = os.environ[USERPROFILE]
 except:
-	HOME = "None"
+	HOME = None
 
 paths = {
-	"linux": '$HOME/.local/share/org.kde.syntax-highlighting/',
+	"linux": f'{HOME}/.local/share/org.kde.syntax-highlighting/',
 	"windows": f'{HOME}\\AppData\\Local\\org.kde.syntax-highlighting\\',
-	"darwin": '$HOME/Library/Application/Support/org.kde.syntax-highlighting/'
+	"darwin": f'{HOME}/Library/Application/Support/org.kde.syntax-highlighting/'
 }
 
 #GIT LINKS
@@ -65,10 +65,11 @@ class Checks():
 	def directory(self):
 		global paths
 		global local_system
+
 		path = paths[local_system]
 		to_check = ["syntax", "themes"]
 		for folder in to_check:
-			os.makedirs(path+folder, exist_ok=True)
+			if os.path.exists(path+folder): os.makedirs(path+folder, exist_ok=True)
 
 class Snippets():
 	def __init__(self, language_name, language_api):
