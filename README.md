@@ -46,7 +46,7 @@ _(DOWNLOADING KATE EDITOR)_
 **MacOS:** `$HOME/Library/Application\ Support/org.kde.syntax-highlighting/syntax/`
 
 
-**CONTRIBUA COM NOVOS TEMAS!**\
+# CONTRIBUA COM NOVOS TEMAS!
 _(CONTRIBUTE TO NEW THEMES)_
 
 [Clique aqui para contribuir!/Click here to contribute!](https://github.com/iagolirapasssos/sBoticsThemesToKateEditor.git)
