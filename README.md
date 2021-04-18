@@ -16,7 +16,7 @@ _(DOWNLOADING KATE EDITOR)_
 5. Use o comando 'pip install -r requirements.txt'
 6. Você poderá vizualizar os arquivos com 'dir' (WINDOWS) ou 'ls' (LINUX OU MAC)
 7. Instalar as bibliotecas com: pip install -r requirements.txt
-8. No WINDOW: py install_snippets.py
+8. No WINDOW: python kate_update.py ptbr/en
 9. No Linux ou Mac: python3 kate_update.py ptbr/en
 ```
 
@@ -29,7 +29,7 @@ _(DOWNLOADING KATE EDITOR)_
 5. Use the 'pip install -r requirements.txt' command
 6. You can view the files with 'dir' (WINDOWS) or 'ls' (LINUX OR MAC)
 7. Install the libraries with on prompt or terminal: pip install -r requirements.txt
-8. Use on WINDOW: py install_snippets.py
+8. Use on WINDOW: python kate_update.py ptbr/en
 9. Use on Linux or Mac: python3 kate_update.py ptbr/en
 ```
 
@@ -46,26 +46,7 @@ _(DOWNLOADING KATE EDITOR)_
 **MacOS:** `$HOME/Library/Application\ Support/org.kde.syntax-highlighting/syntax/`
 
 
-**Atenção! Se os diretórios acima não existirem, então crie-os manualmente!**\
-(Attention! If the above directories do not exist, then create them manually!)
-
-
-**ADICIONANDO TEMAS COLORIDOS AO EDITOR**\
-(ADDING COLOR THEMES TO THE EDITOR)
-
-**PT_BR:**
-```diff
-1. Acesse o menu Configurações > Configurações do Kate > Fontes e cores.
-2. Escolha R-EDUC em "Eschema", depois "importar".
-```
-
-**EN_US:** 
-```diff
-1. Access the Settings menu> Kate Settings> Fonts and colors.
-2. Choose R-EDUC in "Eschema", then "import".
-```
-
-**CONTRIBUA COM NOVOS TEMAS**\
+**CONTRIBUA COM NOVOS TEMAS!**\
 _(CONTRIBUTE TO NEW THEMES)_
 
 [Clique aqui para contribuir!/Click here to contribute!](https://github.com/iagolirapasssos/sBoticsThemesToKateEditor.git)
