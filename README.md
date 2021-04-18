@@ -17,7 +17,7 @@ _(DOWNLOADING KATE EDITOR)_
 6. Você poderá vizualizar os arquivos com 'dir' (WINDOWS) ou 'ls' (LINUX OU MAC)
 7. Instalar as bibliotecas com: pip install -r requirements.txt
 8. No WINDOW: py install_snippets.py
-9. No Linux ou Mac: python3 update_files.py
+9. No Linux ou Mac: python3 kate_update.py ptbr/en
 ```
 
 **EN_US:**
@@ -30,7 +30,7 @@ _(DOWNLOADING KATE EDITOR)_
 6. You can view the files with 'dir' (WINDOWS) or 'ls' (LINUX OR MAC)
 7. Install the libraries with on prompt or terminal: pip install -r requirements.txt
 8. Use on WINDOW: py install_snippets.py
-9. Use on Linux or Mac: python3 update_files.py
+9. Use on Linux or Mac: python3 kate_update.py ptbr/en
 ```
 
 **USE AS SEGUINTES INSTRUÇÕES CASO O INSTALADOR NÃO EXECUTE CORRETAMENTE**\
