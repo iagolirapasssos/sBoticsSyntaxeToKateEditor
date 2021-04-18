@@ -1,4 +1,7 @@
 {
+	"global": {
+		"language_not_found": "... python kate_update.py [ptbr/en] ..."
+	},
 	"ptbr": {
 		"await": "Atualizando, aguarde alguns instantes...",
 		"offline": "Não foi possível se conectar aos servidores sBotics... Resgatando informações salvas no seu dispositivo...",
@@ -11,7 +14,8 @@
 		"error": "Ocorreu um erro, peça ajuda no github ou servidor do sBotics caso necessário! mensagem de erro:",
 		"sucess": "Tudo instalado com sucesso!",
 		"syntax": "Syntax atualizada: ",
-		"theme": "Tema atualizado:"
+		"theme": "Tema atualizado:",
+		"path_not_found": "Não foi possível encontrar sua pasta de usuário... Entre em contato com o criado para mais informações"
 	},
 
 	"en": {
@@ -26,6 +30,7 @@
 		"error": "An error occurred, ask for help on the github or sBotics server if necessary! error message:",
 		"sucess": "All successfully installed!",
 		"syntax": "Updated syntax:",
-		"theme": "Updated theme:"
+		"theme": "Updated theme:",
+		"path_not_found": "Could not find your user folder... Please contact the creator for more information"
 	}
 }
