@@ -21,7 +21,7 @@ except:
 
 paths = {
 	"linux": f'{HOME}/.local/share/org.kde.syntax-highlighting/',
-	"windows": f'{HOME}\\AppData\\Local\\org.kde.syntax-highlighting\\',
+	"windows": f'{HOME}/AppData/Local/org.kde.syntax-highlighting/',
 	"darwin": f'{HOME}/Library/Application/Support/org.kde.syntax-highlighting/'
 }
 
@@ -98,7 +98,7 @@ class Snippets():
 
 	def save(self):
 		xml_base = File.read(f'./dataFiles/base_syntax/base_{language}.xml')
-		File.write(paths[local_system]+f'syntax\\{self.filename}', xml_base.replace("<PART2></PART2>", self.functions_xml))
+		File.write(paths[local_system]+f'syntax/{self.filename}', xml_base.replace("<PART2></PART2>", self.functions_xml))
 		print(language_data["syntax"], self.filename)
 
 class Themes():
@@ -108,12 +108,12 @@ class Themes():
 	def save(self):
 		for name_reduc in self.themes_names["reduc"]:
 			file_to_save = requests.get(f'{themes_link}/R-EDUC/{name_reduc}').json()
-			Json.write(paths[local_system]+f'themes\\{name_reduc}', file_to_save)
+			Json.write(paths[local_system]+f'themes/{name_reduc}', file_to_save)
 			print(language_data["theme"], name_reduc)
 
 		for name_csharp in self.themes_names["csharp"]:
 			file_to_save = requests.get(f'{themes_link}/CSHARP/{name_csharp}').json()
-			Json.write(paths[local_system]+f'themes\\{name_csharp}', file_to_save)
+			Json.write(paths[local_system]+f'themes/{name_csharp}', file_to_save)
 			print(language_data["theme"], name_csharp)
 
 checks = Checks()
