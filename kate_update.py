@@ -86,18 +86,18 @@ class Snippets():
 		self.language_name = language_name
 		self.language_api = language_api
 		self.filename = f'{self.language_name}_{language}.xml'
-		functions_xml = ""
+		self.functions_xml = ""
 
 	def update(self):
 		response = requests.get(self.language_api)
 		functions = response.json()["functions"]
 		self.functions_xml = "<list name=\"keywords\">\n"
 		for function in functions:
-			self.functions_xml+=f'    <item>{function["name"]}</item>\n'
+			self.functions_xml+=f'    <item>{function["code"]}</item>\n'
 		self.functions_xml+="    </list>"
 
 	def save(self):
-		xml_base = File.read(f'./dataFiles/base_syntax/base_{language}.xml')
+		xml_base = File.read(f'./dataFiles/base_syntax/base_{self.language_name}_{language}.xml')
 		File.write(paths[local_system]+f'syntax/{self.filename}', xml_base.replace("<PART2></PART2>", self.functions_xml))
 		print(language_data["syntax"], self.filename)
 
@@ -135,10 +135,10 @@ try:
 
 	#snippets/syntax
 	reducSnippets.update()
-	#csharpSnippets.update()
+	csharpSnippets.update()
 
 	reducSnippets.save()
-	#csharpSnippets.save()
+	csharpSnippets.save()
 
 	#temas
 	themesUpdater.update()
