@@ -72,6 +72,10 @@ SYSTEM 'language.dtd' [
 				<keyword String="control-flow" attribute="Control Flow" context="#stay"/>
 				<keyword String="types" attribute="Types" context="#stay"/>
 
+				<keyword attribute="Keyword" context="#stay" String="inicio" beginRegion="attribute"/>
+				<keyword attribute="Keyword" context="#stay" String="fim" endRegion="attribute"/>
+				
+        <RegExpr attribute="Function" context="#stay" String="\b[_\w][_\w\d]*(?=[\s]*[(])" />
 		<!-- definições que foram comentadas
 		<keyword String="mixin-macros" attribute="Mixin macros" context="#stay"/>
 		<keyword String="definitions" attribute="Definition" context="#stay"/>
@@ -146,6 +150,11 @@ SYSTEM 'language.dtd' [
 	<RegExpr String="#@{1,2}" attribute="Substitution" context="#stay"/>
 	<RegExpr String="\w(?!\w)" attribute="Substitution" context="#pop"/>
 </context>
+
+<context attribute="Normal Text" lineEndContext="#pop" name="Member" fallthrough="true" fallthroughContext="#pop">
+  <RegExpr attribute="Function" context="#pop" String="\b[_\w][_\w\d]*(?=[\s]*)" />
+</context>
+
 <context attribute="Comment" lineEndContext="#pop" name="General Comment">
 	<DetectSpaces />
 	<IncludeRules context="##Comments"/>
@@ -160,6 +169,7 @@ SYSTEM 'language.dtd' [
 	<itemData defStyleNum="dsNormal" name="Normal Text"/>
 	<itemData defStyleNum="dsKeyword" name="Keyword"/>
 	<itemData defStyleNum="dsControlFlow" name="Control Flow"/>
+  <itemData name="Function"     defStyleNum="dsFunction"/>
 	<itemData defStyleNum="dsDataType" name="Types"/>
 	<itemData defStyleNum="dsDecVal" name="Dec"/>
 	<itemData defStyleNum="dsFloat" name="Float"/>

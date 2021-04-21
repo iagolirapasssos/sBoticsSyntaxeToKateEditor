@@ -154,6 +154,7 @@ SYSTEM 'language.dtd' [
         <RegExpr attribute="Function" context="#stay" String="\b[_\w][_\w\d]*(?=[\s]*[(])" />
 
         <AnyChar attribute="Symbol" context="#stay" String=":!%&amp;()+,-/*&lt;=&gt;?[]|~^&#59;"/>
+
       </context>
 
       <context name="Float Suffixes" attribute="Float" lineEndContext="#pop" fallthrough="true" fallthroughContext="#pop">
@@ -246,7 +247,7 @@ SYSTEM 'language.dtd' [
       <comment name="singleLine" start="//" />
       <comment name="multiLine" start="/*" end="*/" region="BlockComment" />
     </comments>
-    <keywords casesensitive="1" weakDeliminator="!?"/>
+    <keywords casesensitive="true" weakDeliminator="!?."/>
   </general>
 </language>
 <!-- kate: replace-tabs on; tab-width 2; indent-width 2; -->
