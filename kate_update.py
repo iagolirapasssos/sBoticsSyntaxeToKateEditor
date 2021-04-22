@@ -1,6 +1,7 @@
 ##﻿#Authors: Francisco Iago Lira Passo (iagolirapassos@gmail.com)
 ### and Vinicios Lugli (vinicioslugli@gmail.com)
 ### Data de criação: 19/04/2021
+### Data de modificação: 22/04/2021
 
 import json, requests, os, sys
 from classes.Manager import *
