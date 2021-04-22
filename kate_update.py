@@ -1,4 +1,7 @@
-﻿import json, requests, os, sys
+##﻿#Authors: Francisco Iago Lira Passo (iagolirapassos@gmail.com)
+### and Vinicios Lugli (vinicioslugli@gmail.com)
+
+import json, requests, os, sys
 from classes.Manager import *
 
 ## VARIAVEIS --------------------------------------------------------------------
