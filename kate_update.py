@@ -3,7 +3,7 @@
 ### Data de criação: 19/04/2021
 ### Data de modificação: 22/04/2021
 
-import json, requests, os, sys
+import json, requests, os, sys, pip
 from classes.Manager import *
 
 ## VARIAVEIS --------------------------------------------------------------------
@@ -38,6 +38,13 @@ themes_link = "https://raw.githubusercontent.com/iagolirapasssos/sBoticsThemesTo
 local_system = "windows"
 language = "en"
 language_data = None
+
+## VERIFICAR OS MÓDULOS
+class verificarModulos():
+	def verificar(self):
+		if not 'requests' in sys.modules.keys():
+			pip.main(['install', 'requests'])
+		
 
 ## CLASSES PRINCIPAIS
 class Checks():
@@ -133,10 +140,14 @@ themesUpdater = Themes()
 reducSnippets = Snippets("reduc", api_reduc[language])
 csharpSnippets = Snippets("csharp", api_csharp[language])
 
+modulo = verificarModulos()
+
 #MAIN
 try:
 
 	print(language_data["await"])
+	#Verificar módulo
+	modulo.verificar()
 
 	#snippets/syntax
 	reducSnippets.update()
