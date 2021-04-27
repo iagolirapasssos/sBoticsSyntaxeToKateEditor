@@ -10,7 +10,7 @@ _(DOWNLOADING KATE EDITOR)_
 **PT_BR:**
 ```diff
 1. Instalar o editor KATE ou KWRITE
-2. Ter o python3 e pip instalados
+2. Ter o [python3](https://www.python.org/downloads/) e [pip](https://pip.pypa.io/en/stable/installing/) instalados
 3. Abrir o terminal ou prompt do Windows/Linux/MacOs
 4. Use o comando 'cd' para navegar até o diretório (pasta) onde está o arquivo update_files.py
 5. Use o comando 'pip install -r requirements.txt'
@@ -23,7 +23,7 @@ _(DOWNLOADING KATE EDITOR)_
 **EN_US:**
 ```diff
 1. Install the KATE or KWRITE editor
-2. Have python3 installed
+2. Have [python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installing/) installed
 3. Open the Windows/Linux/MacOs terminal or prompt
 4. Use the 'cd' command to navigate to the directory (folder) where the update_files.py file is located
 5. Use the 'pip install -r requirements.txt' command
